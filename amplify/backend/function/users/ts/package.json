@@ -2,10 +2,12 @@
   "private": true,
   "version": "0.0.0",
   "dependencies": {
+    "@prisma/client": "^4.7.1",
     "aws-lambda": "^1.0.7",
     "aws-sdk": "^2.1272.0",
     "aws-serverless-express": "^3.3.5",
     "body-parser": "^1.17.1",
+    "dotenv": "^16.0.3",
     "express": "^4.15.2"
   },
   "scripts": {
@@ -31,6 +33,7 @@
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.8.1",
+    "prisma": "^4.7.1",
     "typescript": "^4.9.4"
   }
 }

@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "func:users": "cd amplify/backend/function/users/ts && npm install && npm run tsc && cd -",
-    "func:products": "cd amplify/backend/function/products/ts && npm install && npm run tsc && cd -"
+    "func:users:update": "cd amplify/backend/function/users/src && npm install && cd -",
+    "func:users:updatedb": "cd amplify/backend/function/users/src && npx prisma db pull && npx prisma generate && cd -"
   },
   "dependencies": {
     "@aws-amplify/ui-react": "^4.2.0",

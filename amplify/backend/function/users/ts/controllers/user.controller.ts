@@ -1,11 +1,9 @@
 import type { Request, Response } from 'express';
+import * as service from '../services/user.service';
 
-export const getList = (req: Request, res: Response) => {
+export const getList = async (req: Request, res: Response) => {
   try {
-    const users = [{
-      name: "John",
-      surname: "Doe"
-    }]
+    const users = await service.getList()
     res.json({ success: "get call succeed!", url: req.url, data: users });
   } catch (e) {
     console.error(e);

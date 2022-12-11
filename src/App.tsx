@@ -2,6 +2,7 @@ import { API } from 'aws-amplify';
 import { useEffect, useState } from 'react';
 function App() {
   type User = {
+    id: string;
     name: string;
     surname: string;
   };
@@ -22,7 +23,7 @@ function App() {
     const fetchItems = async () => {
       const resUsers: ResponseWrapper<User[]> = await API.get(
         'apiv1',
-        '/users/1',
+        '/users',
         {}
       );
       // const resProducts: Product[] = await API.get('appAPi', '/products', {});
@@ -46,7 +47,7 @@ function App() {
       <h1>Users</h1>
       <ul>
         {users.map((user) => (
-          <li key={user.name}>
+          <li key={user.id}>
             {user.name} {user.surname}
           </li>
         ))}
