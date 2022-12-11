@@ -15,12 +15,17 @@
       "function": {
         "users": {
           "deploymentBucketName": "amplify-slsamplifytest-dev-05028-deployment",
-          "s3Key": "amplify-builds/users-5a51303565354b68757a-build.zip",
-          "databaseUrl": "postgresql://theerakarn:xdBbCIBB-fhOO2ynhAvtUA@slsdb-cluster-4431.6wr.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full"
+          "s3Key": "amplify-builds/users-5a51303565354b68757a-build.zip"
         }
       },
       "api": {
         "apiv1": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dotsb250w34tv",
+          "type": "manual"
+        }
       }
     }
   }

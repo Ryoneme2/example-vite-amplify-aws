@@ -12,6 +12,11 @@ dist
 dist-ssr
 *.local
 
+*.js
+.env
+mock
+amplify/team-provider-info.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -23,11 +28,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# personal config
-*.js
-.env
-mock
-# end personal config
+
 
 #amplify-do-not-edit-begin
 amplify/\#current-cloud-backend
