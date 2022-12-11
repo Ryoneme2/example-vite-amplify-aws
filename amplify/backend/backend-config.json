@@ -3,11 +3,12 @@
     "users": {
       "build": true,
       "providerPlugin": "awscloudformation",
-      "service": "Lambda"
+      "service": "Lambda",
+      "dependsOn": []
     }
   },
   "api": {
-    "appAPi": {
+    "apiv1": {
       "service": "API Gateway",
       "providerPlugin": "awscloudformation",
       "dependsOn": [

@@ -15,11 +15,11 @@
       "function": {
         "users": {
           "deploymentBucketName": "amplify-slsamplifytest-dev-05028-deployment",
-          "s3Key": "amplify-builds/users-384b3763495239595762-build.zip"
+          "s3Key": "amplify-builds/users-77703748354746646c31-build.zip"
         }
       },
       "api": {
-        "appAPi": {}
+        "apiv1": {}
       }
     }
   }

@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "func:users": "cd amplify/backend/function/users/ts && npm install && npm run tsc && cd -"
+    "func:users": "cd amplify/backend/function/users/ts && npm install && npm run tsc && cd -",
+    "func:products": "cd amplify/backend/function/products/ts && npm install && npm run tsc && cd -"
   },
   "dependencies": {
     "@aws-amplify/ui-react": "^4.2.0",

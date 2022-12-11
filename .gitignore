@@ -26,6 +26,7 @@ dist-ssr
 # personal config
 *.js
 .env
+mock
 # end personal config
 
 #amplify-do-not-edit-begin

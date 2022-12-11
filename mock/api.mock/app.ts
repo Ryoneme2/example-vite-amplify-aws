@@ -15,7 +15,7 @@ app.use(function (req: Request, res: Response, next: NextFunction) {
   next();
 });
 
-app.get("/users", function (req, res) {
+app.get("/users", function (req: Request, res: Response) {
   // Add your code here
   const users = [{
     name : "John",

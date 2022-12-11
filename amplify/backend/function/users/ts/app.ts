@@ -3,6 +3,8 @@ import bodyParser from "body-parser";
 import type { NextFunction, Request, Response } from "express";
 import express from "express";
 
+import * as routers from './routers';
+
 // declare a new express app
 const app = express();
 app.use(bodyParser.json());
@@ -15,14 +17,7 @@ app.use(function (req: Request, res: Response, next: NextFunction) {
   next();
 });
 
-app.get("/users", function (req, res) {
-  // Add your code here
-  const users = [{
-    name : "John",
-    surname : "Doe"
-  }]
-  res.json({ success: "get call succeed!", url: req.url, data : users });
-});
+app.use("/users", routers.userRoute)
 
 app.listen(3000, function () {
   console.log("App started");
