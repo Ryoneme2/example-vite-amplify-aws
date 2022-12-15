@@ -14,6 +14,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/webhook": {
+      "name": "/webhook",
+      "lambdaFunction": "users",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }

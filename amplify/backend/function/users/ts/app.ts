@@ -7,6 +7,9 @@ import * as routers from './routers';
 
 // declare a new express app
 const app = express();
+
+app.use("/webhook", routers.webhook)
+
 app.use(bodyParser.json());
 app.use(awsServerlessExpressMiddleware.eventContext());
 

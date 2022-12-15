@@ -15,7 +15,8 @@
       "function": {
         "users": {
           "deploymentBucketName": "amplify-slsamplifytest-dev-05028-deployment",
-          "s3Key": "amplify-builds/users-5a51303565354b68757a-build.zip"
+          "s3Key": "amplify-builds/users-316e4974535a42613030-build.zip",
+          "databaseUrl": "null"
         }
       },
       "api": {
